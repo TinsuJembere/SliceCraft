@@ -22,7 +22,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000', 'https://slicecraft-frontend-1.onrender.com', 'slice-craft-f1dd41c51-tinsaes-projects-7b3f74ab.vercel.app'],
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000', 'https://slicecraft-frontend-1.onrender.com', 'https://slice-craft-f1dd41c51-tinsaes-projects-7b3f74ab.vercel.app/'],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
