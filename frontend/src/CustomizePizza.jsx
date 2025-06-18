@@ -4,7 +4,7 @@ import { useAuth } from './context/AuthContext';
 import { BsCartFill } from "react-icons/bs";
 import axios from 'axios'; // Import axios
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://slicecraft-1.onrender.com';
 
 export default function CustomizePizza() {
   const [step, setStep] = useState(1);

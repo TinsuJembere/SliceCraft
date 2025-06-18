@@ -4,7 +4,7 @@ import { useAuth } from './context/AuthContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://slicecraft-1.onrender.com";
 
 export default function UserProfile() {
   const { logout, token, updateUserData, user } = useAuth();

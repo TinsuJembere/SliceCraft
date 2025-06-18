@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from './context/AuthContext'; // Import useAuth hook
 
-const API_URL = 'http://localhost:5000/api/auth/register'; // Update if your backend runs elsewhere
+const API_URL = 'https://slicecraft-1.onrender.com/api/auth/register'; // Update if your backend runs elsewhere
 
 export default function SignUp() {
   const [form, setForm] = useState({ name: '', email: '', password: '', terms: false });
@@ -45,7 +45,7 @@ export default function SignUp() {
   };
 
   const handleGoogleSignUp = () => {
-    window.location.href = 'http://localhost:5000/api/auth/google'; // Adjust if needed
+    window.location.href = 'https://slicecraft-1.onrender.com/api/auth/google'; // Adjust if needed
   };
 
   return (

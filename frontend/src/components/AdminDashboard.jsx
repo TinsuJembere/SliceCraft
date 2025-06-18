@@ -7,7 +7,7 @@ import UserManagementPage from './UserManagementPage';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://slicecraft-1.onrender.com';
 
 const AdminDashboard = () => {
   const [inventory, setInventory] = useState([]);

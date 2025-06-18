@@ -5,7 +5,7 @@ import { BsCartFill } from 'react-icons/bs';
 
 const Header = () => {
   const { user, logout, isAuthenticated } = useAuth();
-  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const API_BASE_URL = import.meta.env.VITE_API_URL || "https://slicecraft-1.onrender.com";
 
   return (
     <header className="bg-white shadow-sm py-4 px-6">

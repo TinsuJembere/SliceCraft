@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 // import { API_BASE_URL } from '../../config'; // This import is causing the error
 
-const API_BASE_URL = 'http://localhost:5000'; // Define API_BASE_URL directly here
+const API_BASE_URL = 'https://slicecraft-1.onrender.com'; // Define API_BASE_URL directly here
 
 const UserManagementPage = () => {
   const [users, setUsers] = useState([]);

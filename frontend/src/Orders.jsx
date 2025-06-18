@@ -16,7 +16,7 @@ const Orders = () => {
   const { orderId } = useParams();
   const [subscribeEmail, setSubscribeEmail] = useState('');
 
-  const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+  const API_BASE_URL = import.meta.env.VITE_API_URL || "https://slicecraft-1.onrender.com";
 
   useEffect(() => {
     const fetchOrders = async () => {

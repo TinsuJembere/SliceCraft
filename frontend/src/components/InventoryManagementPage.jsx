@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000'; // Define API_BASE_URL
+const API_BASE_URL = 'https://slicecraft-1.onrender.com'; // Define API_BASE_URL
 
 const InventoryManagementPage = ({ inventory, setInventory }) => {
   const [editItem, setEditItem] = useState(null);
