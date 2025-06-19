@@ -1,0 +1,131 @@
+you can watch alive on https://slice-craft-8rszt7sn9-tinsaes-projects-7b3f74ab.vercel.app/
+
+🍕 SliceCraft: Custom Pizza Builder App
+A full-stack web application for building custom pizzas with real-time inventory tracking, admin and user dashboards, transaction screenshot verification, and smart stock alerting.
+
+Built with React, Node.js, Express, and MongoDB.
+
+🚀 Features
+🔐 Authentication & Authorization
+Role-based login system (Admin & User)
+
+JWT-secured login and registration
+
+Passwords are hashed using bcrypt
+
+🧑‍🍳 User Dashboard
+Browse available pizza varieties
+
+Build your custom pizza:
+
+Choose Pizza Base (5 options)
+
+Select Sauce (5 options)
+
+Pick Cheese Type
+
+Add Veggies (multi-select)
+
+Optional Meats
+
+Upload screenshot of transaction for order verification
+
+Track order status: Order Received, In Kitchen, Sent to Delivery
+
+🛠️ Admin Dashboard
+View all orders and their status
+
+Change status of any order
+
+Upload and manage inventory:
+
+Pizza base, sauce, cheese, veggies, meat
+
+Monitor stock levels in real-time
+
+📦 Inventory Management
+Automatically updates stock quantities when orders are placed
+
+Inventory data shown in admin dashboard
+
+Set threshold values for stock items
+
+📧 Low Stock Notifications
+Sends email alerts to admin when any stock item drops below its threshold (e.g. Pizza base < 20)
+
+📸 Payment Flow
+Instead of live payment gateway integration:
+
+Users upload a screenshot of their transaction
+
+Admin verifies and processes the order manually
+
+🧰 Tech Stack
+Frontend	Backend	Database	Email Notifications
+React.js	Node.js + Express.js	MongoDB	Nodemailer (Gmail)
+
+🗂️ Project Structure
+bash
+Copy
+Edit
+SliceCraft/
+├── client/            # React frontend
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── App.jsx
+├── server/            # Node backend
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── utils/
+├── .env
+└── README.md
+🛡️ Environment Variables
+Create a .env file in /server with the following:
+
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+ADMIN_EMAIL=your_admin_email@gmail.com
+ADMIN_EMAIL_PASS=your_app_password_or_token
+🧪 How to Run Locally
+Clone the repo
+git clone https://github.com/TinsuJembere/SliceCraft.git
+cd SliceCraft
+Install server dependencies
+
+cd backend
+npm install
+Install client dependencies
+
+cd ../frontend
+npm install
+Run the app
+
+# In one terminal for the backend
+cd server
+npm run dev
+
+# In another terminal for the frontend
+cd client
+npm start
+App runs on:
+
+Frontend: http://localhost:5173
+
+Backend: http://localhost:5000
+
+📌 Future Improvements
+Add live payment gateway (e.g. Razorpay)
+
+Real-time updates using WebSocket
+
+Multi-language support
+
+Mobile-friendly responsive design
+
+📄 License
+This project is licensed under the MIT License.
+
+🙌 Acknowledgments
+Built with ❤️ using the MERN stack. 
