@@ -363,7 +363,7 @@ const Orders = () => {
                       <p className="font-semibold text-gray-700 mb-2">
                         Payment Method:
                       </p>
-                      <p className="text-gray-600">Razorpay</p>
+                      <p className="text-gray-600">CBE mobile banking</p>
                     </div>
 
                     <div className="mt-4 pt-4 border-t border-gray-200">
