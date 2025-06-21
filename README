@@ -69,12 +69,12 @@ bash
 Copy
 Edit
 SliceCraft/
-├── client/            # React frontend
+├── frontend/            # React frontend
 │   └── src/
 │       ├── components/
 │       ├── pages/
 │       └── App.jsx
-├── server/            # Node backend
+├── backend/            # Node backend
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
